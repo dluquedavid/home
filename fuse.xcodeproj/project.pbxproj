@@ -15,6 +15,10 @@
 		4A4D1C6F1BFA25D80012FAE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4D1C6D1BFA25D80012FAE8 /* LaunchScreen.storyboard */; };
 		4A4D1C7A1BFA25D80012FAE8 /* fuseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D1C791BFA25D80012FAE8 /* fuseTests.swift */; };
 		4A4D1C851BFA25D90012FAE8 /* fuseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D1C841BFA25D90012FAE8 /* fuseUITests.swift */; };
+		4A4D1C941BFA2C910012FAE8 /* APITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D1C931BFA2C910012FAE8 /* APITest.swift */; };
+		4A4D1C9A1BFA2E150012FAE8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D1C991BFA2E150012FAE8 /* API.swift */; };
+		4A8BA2AC1BFA41CC000ACEA7 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8BA2AB1BFA41CC000ACEA7 /* Company.swift */; };
+		4A8BA2AF1BFA4683000ACEA7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8BA2AE1BFA4683000ACEA7 /* Model.swift */; };
 		91BD455A4A42796FDB04DB95 /* libPods-fuse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D27CC05653B133CD662F10E /* libPods-fuse.a */; };
 		99C7ED3E7A91811E9A0AB915 /* libPods-fuseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7D7DABE8545BD57B729EB9 /* libPods-fuseTests.a */; };
 /* End PBXBuildFile section */
@@ -51,6 +55,11 @@
 		4A4D1C801BFA25D80012FAE8 /* fuseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fuseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A4D1C841BFA25D90012FAE8 /* fuseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fuseUITests.swift; sourceTree = "<group>"; };
 		4A4D1C861BFA25D90012FAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A4D1C931BFA2C910012FAE8 /* APITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITest.swift; sourceTree = "<group>"; };
+		4A4D1C951BFA2D2B0012FAE8 /* fuse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fuse-Bridging-Header.h"; sourceTree = "<group>"; };
+		4A4D1C991BFA2E150012FAE8 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		4A8BA2AB1BFA41CC000ACEA7 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		4A8BA2AE1BFA4683000ACEA7 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		56C6D1C24334A85FE7572825 /* Pods-fuseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fuseUITests/Pods-fuseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EAE4E2DABEC61756F0A2DA2 /* Pods-fuseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fuseTests/Pods-fuseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E64D5DCBFF082BAD4545611 /* Pods-fuseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fuseUITests/Pods-fuseUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +117,7 @@
 				4A4D1C621BFA25D80012FAE8 /* Products */,
 				AED81BBDD47D344D7F110C0B /* Pods */,
 				43F922AB142DD04A03931B53 /* Frameworks */,
+				4A4D1C951BFA2D2B0012FAE8 /* fuse-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +134,8 @@
 		4A4D1C631BFA25D80012FAE8 /* fuse */ = {
 			isa = PBXGroup;
 			children = (
+				4A4D1C9B1BFA3F890012FAE8 /* Model */,
+				4A4D1C981BFA2E040012FAE8 /* API */,
 				4A4D1C641BFA25D80012FAE8 /* AppDelegate.swift */,
 				4A4D1C661BFA25D80012FAE8 /* ViewController.swift */,
 				4A4D1C681BFA25D80012FAE8 /* Main.storyboard */,
@@ -137,6 +149,8 @@
 		4A4D1C781BFA25D80012FAE8 /* fuseTests */ = {
 			isa = PBXGroup;
 			children = (
+				4A8BA2AD1BFA4674000ACEA7 /* Model */,
+				4A4D1C921BFA2C5F0012FAE8 /* API */,
 				4A4D1C791BFA25D80012FAE8 /* fuseTests.swift */,
 				4A4D1C7B1BFA25D80012FAE8 /* Info.plist */,
 			);
@@ -150,6 +164,38 @@
 				4A4D1C861BFA25D90012FAE8 /* Info.plist */,
 			);
 			path = fuseUITests;
+			sourceTree = "<group>";
+		};
+		4A4D1C921BFA2C5F0012FAE8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4A4D1C931BFA2C910012FAE8 /* APITest.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		4A4D1C981BFA2E040012FAE8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4A4D1C991BFA2E150012FAE8 /* API.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		4A4D1C9B1BFA3F890012FAE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A8BA2AB1BFA41CC000ACEA7 /* Company.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4A8BA2AD1BFA4674000ACEA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A8BA2AE1BFA4683000ACEA7 /* Model.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		AED81BBDD47D344D7F110C0B /* Pods */ = {
@@ -428,7 +474,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A4D1C671BFA25D80012FAE8 /* ViewController.swift in Sources */,
+				4A4D1C9A1BFA2E150012FAE8 /* API.swift in Sources */,
 				4A4D1C651BFA25D80012FAE8 /* AppDelegate.swift in Sources */,
+				4A8BA2AC1BFA41CC000ACEA7 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +484,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8BA2AF1BFA4683000ACEA7 /* Model.swift in Sources */,
+				4A4D1C941BFA2C910012FAE8 /* APITest.swift in Sources */,
 				4A4D1C7A1BFA25D80012FAE8 /* fuseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,10 +621,13 @@
 			baseConfigurationReference = 74B2513E28DB8BEA899AB499 /* Pods-fuse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = fuse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "app-builder.fuse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fuse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -583,10 +636,12 @@
 			baseConfigurationReference = 0AFED30F6A153E94AB378662 /* Pods-fuse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = fuse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "app-builder.fuse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fuse-Bridging-Header.h";
 			};
 			name = Release;
 		};

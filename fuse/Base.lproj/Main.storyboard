@@ -22,7 +22,7 @@
                                 <rect key="frame" x="16" y="28" width="343" height="41"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jat-hW-L9M">
@@ -30,6 +30,10 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go"/>
+                                <connections>
+                                    <action selector="endEditingCompanyName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="rhe-zX-9ck"/>
+                                    <action selector="exit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="HAB-7b-bKE"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <animations/>
@@ -44,6 +48,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="txtCompanyName" destination="jat-hW-L9M" id="QRO-sI-pkP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
